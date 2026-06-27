@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header><h1>Place Order</h1></header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html">Order</a>
+</nav>
+
+<section>
+
+<form onsubmit="submitOrder(event)">
+
+    <input id="name" placeholder="Full Name" required>
+    <input id="phone" placeholder="Phone Number" required>
+    <textarea id="address" placeholder="Address" required></textarea>
+
+    <h3>Payment Method</h3>
+
+    <div class="payment-option">
+        <input type="radio" name="pay" value="UPI">
+        <label>UPI</label>
+    </div>
+
+    <div class="payment-option">
+        <input type="radio" name="pay" value="Card">
+        <label>Card</label>
+    </div>
+
+    <div class="payment-option">
+        <input type="radio" name="pay" value="COD">
+        <label>Cash on Delivery</label>
+    </div>
+
+    <div id="upiField" style="display:none;">
+        <input type="text" placeholder="Enter UPI ID">
+    </div>
+
+    <div id="cardField" style="display:none;">
+        <input type="text" placeholder="Card Number">
+        <input type="text" placeholder="Expiry Date">
+        <input type="text" placeholder="CVV">
+    </div>
+
+    <button type="submit">Place Order</button>
+
+</form></section>
+
+<script src="script.js"></script>
+<footer>
+    <div class="footer-content">
+
+        <h2>Farmers Fresh Vegetables</h2>
+
+        <p>Fresh vegetables directly from farmers to your home.</p>
+        <p>Simple. Fresh. Affordable.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="order.html">Order</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="#">Instagram</a>
+           <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Farmers Fresh. All rights reserved.
+        </p>
+
+    </div>
+</footer>
+</body>
+</html>
